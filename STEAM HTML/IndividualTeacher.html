@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Teacher Profile - Sample Teacher</title>
+        <style>
+        h1 {
+          color: #FDCD06;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+          font-size: 40px;
+          text-align: center;
+          font-weight: normal;
+          }
+        h2 {
+           color: black;
+           font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+           font-size: 20px;
+           text-align: left;
+           font-weight: normal;
+           margin-left: 10%;
+            }    
+        h3 {
+           color: black;
+           font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+           font-size: 15px;
+           text-align: left;
+           font-weight: normal;
+           margin-left: 15%;    
+            }
+        h4 {
+           color: black;
+           font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+           font-size: 15px;
+           text-align: right;
+           font-weight: normal;
+           margin-right: 10%; 
+           margin-left: 87%;
+           border: solid 1pt;
+            }
+        #clock {
+          align: right;
+          color: black;
+          text-align: right;
+          font: 14pt sans-serif;
+          margin-right: 5%;
+          margin-top: 3%;
+          }
+        #body {
+          margin-left: 30%;
+          margin-right: 30%;
+          text-align: center;
+          }
+        </style>
+    </head>
+    
+    <body>
+      <div id="clock">
+      </div>
+      <h1>Teacher Profile</h1>
+        <div id = 'body'>
+        </div>
+      <h2>Sample Teacher Name</h2>
+      <h2>Email:</h2>
+      <h2>Phone Number:</h2>
+      <h2>Address:</h2>
+        <h3>Street</h3>
+        <h3>City, State ZIP</h3>
+        <h3>Country</h3>
+      <h2>Courses:</h2>
+        <h3>Course 1</h3>
+        <h3>Course 2</h3>
+        <h3>Course 3</h3>
+      <h4>Edit</h4>
+      <script>
+            window.onload = displayTime;
+            function displayTime() {
+              var element = document.getElementById("clock");
+              var now = new Date();
+              element.innerHTML = now.toLocaleTimeString();
+              setTimeout(displayTime, 1000);
+            }
+      </script>
+    </body>
+    
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Profiles	</title>
+
+	<style type="text/css">
+		h1 {
+          color: #28B2D8;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+          font-size: 60px;
+          text-align: left;
+          font-weight: normal;
+          }
+		#clock {
+          align: right;
+          color: black;
+          text-align: right;
+          font: 14pt sans-serif;
+          margin-right: 5%;
+          margin-top: 3%;
+      }
+
+      #button {
+          margin-top: 1%;
+          margin-left: 10%;
+          margin-right: 10%;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+          font-size: 1.5em;
+          padding: .01px;
+          padding-left: 5%;
+          padding-right: 5%;
+          text-align: left;
+          border-bottom: solid black 1pt;
+      }
+      #bod {
+      	margin-left: 30%;
+      	margin-right: 30%;
+      	border: solid black 1pt;
+      	border-radius: 40px;
+      }
+      #header {
+      	margin-left: 30%;
+      	margin-right: 30%;
+      }
+      a {
+      	text-decoration: none;
+      	color: gray;
+      }
+      #in {
+      	text-align: right;
+      }
+	</style>
+</head>
+<body>
+	<div id="clock"></div>
+	<div id = "header">
+		<h1>Student Profiles</h1>
+		<input id ="in" type="text">
+	</div>
+	<div id="bod">
+		<div id = "button">
+			<a href="student.html">	
+				<p>Boo</p> </a>
+		</div>
+		<div id = "button"	>
+			<a href="student.html">
+				<p>Lean</p> </a>
+		</div>
+	</div>
+
+
+
+	 <script>
+            window.onload = displayTime;
+            function displayTime() {
+              var element = document.getElementById("clock");
+              var now = new Date();
+              element.innerHTML = now.toLocaleTimeString();
+              setTimeout(displayTime, 1000);
+            }
+          </script>
+</body>
+</html>

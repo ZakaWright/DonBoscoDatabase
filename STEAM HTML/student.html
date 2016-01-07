@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Name</title>
+	<style type="text/css">
+		h1 {
+          color: #28B2D8;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+          font-size: 60px;
+          /*text-align: center; */
+          font-weight: normal;
+          margin-left: 30%;
+        }
+       
+         h3 {
+    	  	color: gray;
+ 	  		font-size: 2em;
+  			font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  			padding: .1px;
+  			margin-bottom: -.5px;
+      	}
+      	h4 {
+    	  	color: gray;
+ 	  		font-size: 1.5em;
+  			font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  			padding: .1px;
+  			margin-bottom: -.5px;
+      	}
+
+		#clock {
+          text-align: right;
+          color: black;
+          text-align: right;
+          font: 14pt sans-serif;
+          margin-right: 5%;
+          margin-top: 3%;
+          }
+     	#bod {
+      		margin-left: 30%;
+      		margin-right: 30%;
+      		padding: .01px;
+      		padding-left: 2%;
+      		padding-right: 2%;
+      		border: solid black 1pt;
+      		border-radius: 10px;
+      		}
+     	 a {
+      		text-decoration: none;
+      		color: gray;
+	      }
+      	.head {
+      		border-bottom: solid black 1pt;
+      		padding-bottom: .0;
+      	}
+      	.name {
+      		margin-left: 30%;
+      		text-align: left;
+      	}
+      
+	</style>
+</head>
+<body>
+	<div id="clock"></div>
+	<!--<h1>Don Bosco ESL Cente</h1>-->
+
+		<div id="name">
+			<h1>Name: Boo</h1>
+		</div>
+		<div id = "bod">
+			<!--<img src="expic.png">-->
+			<div class="section">
+				<div class="head">
+					<h4>General Information</h4>
+				</div>
+				<div class="content">
+					<p>Student ID: 1234</p>
+					<p>Date of Birth: 1/1/11</p>
+					<p>Registration Date: 1/2/11</p>
+					<p>Gender: No thank you</p>
+					<p>Marital Status: Yes</p>
+					<p>SSN: 123-45-6789</p>
+					<p>Ethnic Background: Latino</p>
+					<p>Address of Orgin: 666 Hell Avenue, Hell, Mexico</p>
+				</div>
+
+				<div class="head">
+					<h4>Contact Information</h4>
+				</div>
+				<div class="content">
+					<p>Address: 1 America Lane, America City, Texas</p>
+					<p>Email: email@gmail.com</p>
+					<p>Phone Number: 123-456-7890</p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+	 <script>
+            window.onload = displayTime;
+            function displayTime() {
+              var element = document.getElementById("clock");
+              var now = new Date();
+              element.innerHTML = now.toLocaleTimeString();
+              setTimeout(displayTime, 1000);
+            }
+          </script>
+</body>
+</html>

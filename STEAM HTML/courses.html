@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Courses</title>
+    <div id="clock"> </div>
+        <h1> Courses </h1>
+
+        <style>
+        h1 {
+          color: #ED1D23;
+          font-family: 'centurygothic', centurygothic, applegothic, sans-serif;
+          font-size: 60px;
+          text-align: center;
+          font-weight: normal;
+          }
+         h2 {
+          color: black ;
+          font-family: 'centurygothic', centurygothic, applegothic, sans-serif;
+          font-size: 30px;
+          text-align: left;
+          font-weight: normal;
+          margin-left: 2%
+          }
+         #button1 {
+          border: solid #F47320 1pt;
+          margin-top: 1%;
+          border-radius: 50px;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+          font-size: 18pt;
+          padding: .01px;
+          margin-right: 
+          }
+        #button2 {
+          border: solid #47C2BD 1pt;
+          margin-top: 1%;
+          border-radius: 50px;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+            font-size: 18pt;
+          padding: .01px;
+          margin-right: 
+          }
+        #clock {
+          align: right;
+          color: black;
+          text-align: right;
+          font: 14pt sans-serif;
+          margin-right: 5%;
+          margin-top: 3%;
+          }
+        #button3 {
+          border: solid #FDCD06 1pt;
+          margin-top: 1%;
+          border-radius: 50px;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+            font-size: 18pt;
+          padding: .01px;
+          margin-right:
+          }
+         #button4 {
+          border: solid #28B2D8 1pt;
+          margin-top: 1%;
+          border-radius: 50px;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+             font-size: 18pt;
+          padding: .01px;
+          margin-right:  
+        }
+        p{
+            text-align: center
+        }
+    </style>
+    </head>
+    <body>
+    <h2>Monday</h2>
+        <div ID ='button1'>
+        <p> Class 1 - Teacher - 9:30 A.M.</p>
+        </div>
+        <div ID ='button2'>
+        <p> Class 2 - Teacher - 2:30 P.M.</p>
+        </div>    
+    <h2>Tuesday</h2>  
+        <div ID ='button3'>
+        <p> Class 1 - Teacher - 9:30 A.M.</p>
+        </div>
+        <div ID ='button4'>
+        <p> Class 2 - Teacher - 2:30 P.M.</p>
+        </div>     
+    <h2>Wednesday</h2>
+        <div ID ='button1'>
+        <p> Class 1 - Teacher - 9:30 A.M.</p>
+        </div>
+        <div ID ='button2'>
+        <p> Class 2 - Teacher - 2:30 P.M.</p>
+        </div>      
+    <h2>Thursday</h2>  
+        <div ID ='button3'>
+        <p> Class 1 - Teacher - 9:30 A.M.</p>
+        </div>
+        <div ID ='button4'>
+        <p> Class 2 - Teacher - 2:30 P.M.</p>
+        </div> 
+        
+        
+        
+        <script>
+            window.onload = displayTime;
+            function displayTime() {
+              var element = document.getElementById("clock");
+              var now = new Date();
+              element.innerHTML = now.toLocaleTimeString();
+              setTimeout(displayTime, 1000);
+            }
+          </script>
+    </body>
+</html>

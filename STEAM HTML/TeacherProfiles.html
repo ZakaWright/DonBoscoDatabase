@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Don Bosco Teachers</title>
+        <style>
+        h1 {
+          color: #FDCD06;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+          font-size: 40px;
+          text-align: center;
+          font-weight: normal;
+          }
+        h2 {
+           color: black;
+           font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+           font-size: 20px;
+           text-align: left;
+           font-weight: normal;
+           margin-left: 10%;
+           text-decoration: none;
+            }   
+        h3 {
+           color: black;
+           font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+           font-size: 15px;
+           text-align: right;
+           font-weight: normal;
+           margin-right: 10%; 
+           margin-left: 87%;
+           border: solid 1pt;
+            }
+        #clock {
+          align: right;
+          color: black;
+          text-align: right;
+          font: 14pt sans-serif;
+          margin-right: 5%;
+          margin-top: 3%;
+          }
+        #body {
+          margin-left: 30%;
+          margin-right: 30%;
+          text-align: center;
+          }
+        a {
+          text-decoration: none;
+        }
+        </style>
+    </head>
+    
+    <body>
+      <div id="clock">
+      </div>
+      <h1>Don Bosco Teachers</h1>
+        <div id = 'body'>
+        </div>
+      <a href="IndividualTeacher.html">
+        <h2>Last Name, First Name</h2>
+      </a> <a href="IndividualTeacher.html">
+        <h2>Last Name, First Name</h2>
+      </a><a href="IndividualTeacher.html">
+        <h2>Last Name, First Name</h2>
+      </a> <a href="IndividualTeacher.html">
+        <h2>Last Name, First Name</h2>
+      <a href="IndividualTeacher.html">
+        <h2>Last Name, First Name</h2>
+      </a> <a href="IndividualTeacher.html">
+        <h2>Last Name, First Name</h2>
+      </a>
+        <h3>Edit</h3>
+      <script>
+            window.onload = displayTime;
+            function displayTime() {
+              var element = document.getElementById("clock");
+              var now = new Date();
+              element.innerHTML = now.toLocaleTimeString();
+              setTimeout(displayTime, 1000);
+            }
+      </script>
+    </body>
+    
+</html>

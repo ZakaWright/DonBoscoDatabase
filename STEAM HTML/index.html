@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+      <title>Don Bosco ESL Center</title>
+      <style>
+        h1 {
+          color: #28B2D8;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+          font-size: 60px;
+          text-align: center;
+          font-weight: normal;
+          }
+        #clock {
+          align: right;
+          color: black;
+          text-align: right;
+          font: 14pt sans-serif;
+          margin-right: 5%;
+          margin-top: 3%;
+          }
+        #button1 {
+          border: solid #F47320 1pt;
+          margin-top: 1%;
+          border-radius: 40px;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+          font-size: 18pt;
+          padding: .01px;
+          }
+        #button2 {
+          border: solid #47C2BD 1pt;
+          text-decoration: none;
+          margin-top: 1%;
+          border-radius: 40px;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+          font-size: 18pt;
+          padding: .01px;
+          }
+        #button3 {
+          border: solid #FDCD06 1pt;
+          margin-top: 1%;
+          border-radius: 40px;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+          font-size: 18pt;
+          padding: .01px;
+          }
+         #button4 {
+          border: solid #ED1D23 1pt;
+          margin-top: 1%;
+          border-radius: 40px;
+          font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+          font-size: 18pt;
+          padding: .01px;
+          }
+        #body {
+              margin-left: 30%;
+              margin-right: 30%;
+              text-align: center;
+          }
+      </style>
+    </head>
+    
+    <body>
+         <div id="clock">
+         
+          </div>
+        <h1>Don Bosco ESL Center</h1>
+        <div id = 'body'>
+        
+          <div ID ='button1'>
+            <a href="Registration.html">
+              <p> Registration </p>
+            </a>
+          </div>
+          <div ID ='button2'>
+            <a href="studentprofile.html">
+              <p> Student Profile </p>
+            </a>
+          </div>
+          <div ID ='button3'>
+            <a href="TeacherProfiles.html">
+              <p> Teacher Profile </p>
+            </a>
+          </div>
+          <div ID ='button4'>
+            <a href="courses.html">
+              <p> Courses </p>
+            </a>
+          </div>
+        </div>
+         <script>
+            window.onload = displayTime;
+            function displayTime() {
+              var element = document.getElementById("clock");
+              var now = new Date();
+              element.innerHTML = now.toLocaleTimeString();
+              setTimeout(displayTime, 1000);
+            }
+          </script>
+    </body>
+    
+</html>

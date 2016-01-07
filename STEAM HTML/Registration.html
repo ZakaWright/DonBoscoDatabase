@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+    <title>Registration</title>
+    <style>
+      h1 {
+        color: #28B2D8;
+        font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        font-size: 60px;
+        text-align: left;
+        font-weight: normal;
+        margin-left: 40px;
+        }
+      #clock {
+        align: right;
+        color: black;
+        text-align: right;
+        font: 14pt sans-serif;
+        margin-right: 5%;
+        margin-top: 3%;
+        }
+      .information {
+        margin-top: 15px;
+        margin-bottom: 3px;
+        font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        font-size: 24px;
+        font-weight: normal;
+        margin-left: 40px;
+        }
+      .field {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        }
+      label {
+        width: 150px;
+        display: inline-block;
+        margin-left: 100px;
+        }
+      button {
+        margin-top: 15px;
+        margin-left: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div ID="clock"></div>
+    <h1>Registration</h1>
+    <form action="/my-handling-form-page" method="post">
+      <div class=information>
+        New Student
+      </div>
+      <div class=field>
+        <label for="FirstName">First Name:</label>
+        <input type="text" id="firstname" />
+      </div>
+      <div class=field>
+        <label for="MiddleInitial">Middle Initial:</label>
+        <input type="text" id="middleinitial" />
+      </div>
+      <div class=field>
+        <label for="LastName">Last Name:</label>
+        <input type="text" id="lastname" />
+      </div>
+      <div class=field>
+        <label for="RegistrationDate">Registration Date:</label>
+        <input type="date" id="registrationdate" />
+      </div>
+      <div class=information>
+        Personal Information
+      </div>
+      <div class=field>
+        <label for="SSN">SSN:</label>
+        <input type="text" id="ssn" pattern="\d{3}[\-]\d{2}[\-]\d{4}"/>
+      </div>
+      <div class=field>
+        <label for="MaritalStatus">Marital Status:</label>
+        <select>
+          <option value="married">Married</option>
+          <option value="single">Single</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class=field>
+        <label for="DateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateofbirth" />
+      </div>
+      <div class=field>
+        <label for="EthnicBackground">Ethnic Background:</label>
+        <input type="text" id="ethnicbackground" />
+      </div>
+      <div class=information>
+        Contact
+      </div>
+      <div class=field>
+        <label for="PhoneNumber">Phone Number:</label>
+        <input type="text" id="phonenumber" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+      </div>
+      <div class=field>
+        <label for="Email">Email:</label>
+        <input type="text" id="email" />
+      </div>
+      <div class=information>
+        Current Address
+      </div>
+      <div class=field>
+        <label for="StreetAddress">Street Address:</label>
+        <input type="text" id="streetaddress" />
+      </div>
+      <div class=field>
+        <label for="City">City:</label>
+        <input type="text" id="city" />
+      </div>
+      <div class=field>
+        <label for="State">State:</label>
+        <input type="text" id="state" />
+      </div>
+      <div class=field>
+        <label for="PostalCode">Postal Code:</label>
+        <input type="text" id="postalcode" />
+      </div>
+      <div class=information>
+        Origin Address
+      </div>
+      <div class=field>
+        <label for="Region">Region:</label>
+        <input type="text" id="region" />
+      </div>
+      <div class=field>
+        <label for="Country">Country:</label>
+        <input type="text" id="country" />
+      </div>
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+    <script>
+      window.onload = displayTime;
+      function displayTime() {
+        var element = document.getElementById("clock");
+        var now = new Date();
+        element.innerHTML = now.toLocaleTimeString();
+        setTimeout(displayTime, 1000);
+        }
+    </script>
+  </body>
+</html>
